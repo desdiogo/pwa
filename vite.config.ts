@@ -11,10 +11,11 @@ export default defineConfig({
     vue(),
     vueJsx(),
     VitePWA({
-        registerType: "autoUpdate",
+      registerType: "autoUpdate",
       injectRegister: "auto",
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        sourcemap: true,
       },
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {

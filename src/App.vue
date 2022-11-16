@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import ServiceWorker from "./components/ServiceWorker.vue";
 </script>
 
 <template>
@@ -22,7 +23,7 @@ import HelloWorld from "./components/HelloWorld.vue";
       </nav>
     </div>
   </header>
-
+  <ServiceWorker />
   <RouterView />
 </template>
 

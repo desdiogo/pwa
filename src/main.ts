@@ -5,7 +5,6 @@ import App from "./App.vue";
 import router from "./router";
 
 import "./assets/main.css";
-if (typeof window !== "undefined") import("./sw");
 
 const app = createApp(App);
 
