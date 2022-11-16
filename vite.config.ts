@@ -11,8 +11,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
     VitePWA({
-      srcDir: "src",
-      filename: "sw.ts",
       registerType: "autoUpdate",
       injectRegister: "auto",
       workbox: {
