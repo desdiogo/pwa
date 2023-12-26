@@ -1,12 +1,22 @@
 <script setup lang="ts">
 import { useRegisterSW } from "virtual:pwa-register/vue";
 
-const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW();
+const intervalMS = 60 * 60 * 1000;
 
-const close = async () => {
+const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW({
+  onRegisteredSW(_, r) {
+    r &&
+      setInterval(() => {
+        console.log("estou aqui");
+        r.update();
+      }, intervalMS);
+  },
+});
+
+function close() {
   offlineReady.value = false;
   needRefresh.value = false;
-};
+}
 </script>
 
 <template>
