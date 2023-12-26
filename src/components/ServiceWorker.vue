@@ -27,9 +27,7 @@ function close() {
         New content available, click on reload button to update.
       </span>
     </div>
-    <button v-if="needRefresh" @click="updateServiceWorker()">
-      Reload Page
-    </button>
+    <button v-if="needRefresh" @click="updateServiceWorker()">Reload</button>
     <button @click="close">Close</button>
   </div>
 </template>
