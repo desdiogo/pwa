@@ -19,6 +19,9 @@ devDependencies:
   '@rushstack/eslint-patch':
     specifier: ^1.6.1
     version: 1.6.1
+  '@tsconfig/node18':
+    specifier: ^18.2.2
+    version: 18.2.2
   '@types/jsdom':
     specifier: ^21.1.6
     version: 21.1.6
@@ -1828,6 +1831,10 @@ packages:
       json5: 2.2.3
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.10
+    dev: true
+
+  /@tsconfig/node18@18.2.2:
+    resolution: {integrity: sha512-d6McJeGsuoRlwWZmVIeE8CUA27lu6jLjvv1JzqmpsytOYYbVi1tHZEnwCNVOXnj4pyLvneZlFlpXUK+X9wBWyw==}
     dev: true
 
   /@types/estree@0.0.39:
