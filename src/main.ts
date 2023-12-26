@@ -14,6 +14,7 @@ useRegisterSW({
   onRegisteredSW(_, r) {
     r &&
       setInterval(() => {
+        console.log(_)
         r.update();
       }, intervalMS);
   },
