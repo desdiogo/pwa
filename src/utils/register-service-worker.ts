@@ -1,10 +1,8 @@
-import axios from "axios";
-
 export async function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("/service-worker.js", {
-        scope: "/",
+        scope: "/notification",
       })
       .then(async (serviceWorker) => {
         let subscription = await serviceWorker.pushManager.getSubscription();
