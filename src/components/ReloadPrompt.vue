@@ -39,6 +39,8 @@ async function handleClose() {
 
 function handleUpdate() {
   updateServiceWorker();
+  needRefresh.value = false;
+  open.value = false;
 }
 
 watch(needRefresh, (refresh) => {
