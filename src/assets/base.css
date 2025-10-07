@@ -1,0 +1,142 @@
+:root {
+    /* Colors and shades */
+    --green-50: #f1fdf4;
+    --green-100: #d4f9dc;
+    --green-200: #99f1ac;
+    --green-300: #5fea7d;
+    --green-400: #24e24d;
+    --green-500: #17ad37;
+    --green-600: #12842a;
+    --purple-50: #fef9ff;
+    --purple-100: #f6dbff;
+    --purple-200: #e79eff;
+    --purple-300: #d860ff;
+    --purple-400: #c823ff;
+    --purple-500: #ac00e5;
+    --purple-600: #9100c1;
+    --orange-50: #fff8e9;
+    --orange-100: #fff0c3;
+    --orange-200: #ffda95;
+    --orange-300: #ffc71d;
+    --orange-400: #ffb325;
+    --orange-500: #ec9a00;
+    --orange-600: #c37f00;
+    --teal-50: #eafafd;
+    --teal-100: #d1f3fa;
+    --teal-200: #9ee6f5;
+    --teal-300: #6bd8f0;
+    --teal-400: #38cbeb;
+    --teal-500: #15b3d6;
+    --teal-600: #1088a3;
+    --red-50: #fff0f2;
+    --red-100: #ffd2d8;
+    --red-200: #ff95a3;
+    --red-300: #ff576e;
+    --red-400: #ff1a39;
+    --red-500: #dc001e;
+    --red-600: #a40016;
+    --black-500: #212121;
+    --brand-blue-50: #f8f9fa;
+    --brand-blue-100: #e7ecf0;
+    --brand-blue-200: #cbd5db;
+    --brand-blue-300: #697e8e;
+    --brand-blue-400: #3b7ba8;
+    --brand-blue-500: #0676c5;
+    --brand-blue-600: #055c9a;
+    --white-500: #ffffff;
+    --transparent: rgba(0, 0, 0, 0);
+    --background-dark: #343A40;
+
+    /* Tokens for specific elements */
+    --bg: var(--brand-blue-50);
+    --bg-element: var(--white-500);
+    --bg-subtle: var(--brand-blue-100);
+
+    --button-primary-bg: var(--brand-blue-500);
+    --button-primary-bg-hover: var(--brand-blue-600);
+    --button-primary-border: var(--brand-blue-500);
+    --button-primary-border-hover: var(--brand-blue-500);
+    --button-primary-text: var(--white-500);
+    --button-primary-text-hover: var(--white-500);
+
+    --button-secondary-bg: var(--transparent);
+    --button-secondary-bg-hover: var(--transparent);
+    --button-secondary-border: var(--line);
+    --button-secondary-border-hover: var(--line);
+    --button-secondary-text: var(--brand-blue-500);
+    --button-secondary-text-hover: var(--brand-blue-600);
+
+    --disabled: var(--brand-blue-200);
+    --hover: var(--brand-blue-100);
+    --icon: var(--white-500);
+    --line: var(--brand-blue-200);
+    --line-hover: var(--brand-blue-300);
+    --line-icon: var(--brand-blue-500);
+    --line-icon-hover: var(--brand-blue-600);
+
+    --text-primary: var(--black-500);
+    --text-secondary: var(--brand-blue-300);
+
+    --type-activity: var(--purple-500);
+    --type-contacts: var(--teal-500);
+    --type-directory: var(--brand-blue-500);
+    --type-groups: var(--green-500);
+    --type-spaces: var(--orange-500);
+    --type-unknown: var(--red-500);
+
+    --presence-call: var(--red-500);
+    --presence-call-inverted: var(--white-500);
+    --presence-meeting: var(--brand-blue-500);
+    --presence-meeting-inverted: var(--white-500);
+    --sms: var(--green-500);
+
+    --starred-active-bg: var(--orange-100);
+    --starred-active-bg-hover: var(--orange-200);
+    --starred-active-border: var(--orange-300);
+    --starred-active-border-hover: var(--orange-400);
+    --starred-active-icon: var(--orange-400);
+    --starred-active-icon-hover: var(--orange-500);
+
+    --tooltip-bg: var(--black-500);
+    --tooltip-text: var(--white-500);
+
+    --unread-badge-bg: var(--brand-blue-500);
+    --unread-badge-bg-inverted: var(--white-500);
+    --unread-badge-text: var(--white-500);
+    --unread-badge-text-inverted: var(--brand-blue-500);
+
+    --call-start: var(--green-500);
+    --call-start-hover: var(--green-600);
+    --call-end: var(--red-500);
+    --call-end-hover: var(--red-600);
+    --call-hold: var(--orange-500);
+    --call-hold-hover: var(--orange-600);
+
+    --error: var(--red-500);
+    --success: var(--green-500);
+
+    --input-border: var(--line);
+    --input-border-focus: var(--brand-blue-500);
+    --input-border-hover: var(--line-hover);
+    --input-bg: var(--white-500);
+    --input-bg-focus: var(--white-500);
+    --input-bg-hover: var(--white-500);
+    --input-icon: var(--text-primary);
+    --input-icon-focus: var(--brand-blue-500);
+    --input-icon-hover: var(--text-primary);
+    --input-text: var(--text-primary);
+    --input-text-focus: var(--brand-blue-500);
+    --input-text-hover: var(--text-primary);
+    --input-text-placeholder: var(--text-secondary);
+
+    --status-away-inner: var(--orange-500);
+    --status-away-outer: var(--bg);
+    --status-busy-inner: var(--red-500);
+    --status-busy-outer: var(--bg);
+    --status-dnd-outer: var(--red-500);
+    --status-dnd-inner: var(--bg);
+    --status-offline-outer: var(--brand-blue-500);
+    --status-offline-inner: var(--white-500);
+    --status-online-inner: var(--green-500);
+    --status-online-outer: var(--bg);
+}
