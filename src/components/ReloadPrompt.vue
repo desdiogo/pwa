@@ -7,7 +7,7 @@ import UpdateDialog from '@/components/UpdateDialog.vue';
 const intervalMs = 1000 * 5
 const updateInterval = ref<ReturnType<typeof setInterval>>();
 
-const { updateServiceWorker, needRefresh } = useRegisterSW({
+const { updateServiceWorker, needRefresh, offlineReady } = useRegisterSW({
   onRegisteredSW(swUrl, r) {
     console.log(`Service Worker at: ${swUrl}`)
       }
@@ -38,6 +38,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
+  <span>offlineReady: {{ offlineReady }}</span>
+  <span>needRefresh: {{ needRefresh }}</span>
   <button class="upload-button" :disabled="!needRefresh" @click="open = true">
     <RssIcon />
   </button>
