@@ -22,6 +22,10 @@ const { updateServiceWorker, needRefresh } = useRegisterSW({
             'cache-control': 'no-cache',
           },
         });
+
+        if (resp?.status === 200) {
+          needRefresh.value = true;
+        }
       }, intervalMs);
     }
   },
