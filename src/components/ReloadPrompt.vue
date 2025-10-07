@@ -9,26 +9,8 @@ const updateInterval = ref<ReturnType<typeof setInterval>>();
 
 const { updateServiceWorker, needRefresh } = useRegisterSW({
   onRegisteredSW(swUrl, r) {
-    if (r) {
-      updateInterval.value = setInterval(async () => {
-        if (r.installing || !navigator) return;
-
-        if ('connection' in navigator && !navigator.onLine) return;
-
-        const resp = await fetch(swUrl, {
-          cache: 'no-store',
-          headers: {
-            cache: 'no-store',
-            'cache-control': 'no-cache',
-          },
-        });
-
-        if (resp?.status === 200) {
-          needRefresh.value = true;
-        }
-      }, intervalMs);
-    }
-  },
+    console.log(`Service Worker at: ${swUrl}`)
+      }
 });
 
 const open = ref(false);
@@ -39,7 +21,6 @@ async function handleClose() {
 
 function handleUpdate() {
   updateServiceWorker();
-  needRefresh.value = false;
   open.value = false;
 }
 
