@@ -53,7 +53,7 @@ function handleClose() {
 }
 
 function handleUpdate() {
-  updateServiceWorker(true);
+  updateServiceWorker();
 }
 
 onBeforeUnmount(() => {
